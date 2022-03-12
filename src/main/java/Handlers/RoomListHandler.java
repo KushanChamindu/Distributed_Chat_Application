@@ -5,7 +5,7 @@ import Utils.YMLReader;
 
 import java.util.ArrayList;
 
-public class RoomListHandler {
+public class RoomListHandler{
 
     public ArrayList<String> getRoomList(String identity){
         ArrayList<String> roomList = new ArrayList<>();
