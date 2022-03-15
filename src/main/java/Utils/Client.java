@@ -6,6 +6,11 @@ public class Client {
     String server;
     String status;
 
+    public Client(String identity,String server, String status){
+        this.identity = identity;
+        this.server = server;
+        this.status = status;
+    }
     public String getIdentity() {
         return identity;
     }

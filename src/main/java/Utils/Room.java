@@ -1,13 +1,21 @@
 package Utils;
 
 import java.util.ArrayList;
+import Utils.Client;
 
 public class Room {
 
     private String roomID;
     private String server;
-    private String owner;
-    private ArrayList<String> clients;
+    private Client owner;
+    private ArrayList<Client> clients;
+
+    public Room(String roomID, String server, Client owner, ArrayList<Client> clients){
+        this.roomID = roomID;
+        this.server = server;
+        this.owner = owner;
+        this.clients = clients;
+    }
 
     public String getRoomID() {
         return roomID;
@@ -25,19 +33,19 @@ public class Room {
         this.server = server;
     }
 
-    public ArrayList<String> getClients() {
+    public ArrayList<Client> getClients() {
         return clients;
     }
 
-    public void setClients(ArrayList<String> clients) {
+    public void setClients(ArrayList<Client> clients) {
         this.clients = clients;
     }
 
-    public String getOwner() {
+    public Client getOwner() {
         return owner;
     }
 
-    public void setOwner(String owner) {
+    public void setOwner(Client owner) {
         this.owner = owner;
     }
 }
